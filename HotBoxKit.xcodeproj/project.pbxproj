@@ -96,6 +96,7 @@
 		01C6BBC822BD58DD00D71B15 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C6BBC722BD58DD00D71B15 /* BaseViewController.swift */; };
 		01C6BBCA22BD5F1500D71B15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01C6BBC922BD5F1500D71B15 /* GoogleService-Info.plist */; };
 		01C6BCDD22BD626B00D71B15 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C6BCDC22BD626B00D71B15 /* Pool.swift */; };
+		01C804B122C154A90064F5A4 /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C804B022C154A90064F5A4 /* Firebase.h */; };
 		01DBD8FD22BD2E46006DF15A /* SecureKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DBD8B422BD2E45006DF15A /* SecureKeys.swift */; };
 		01DBD92722BD2E46006DF15A /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DBD8E622BD2E46006DF15A /* Token.swift */; };
 		01DBD92822BD2E46006DF15A /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DBD8E822BD2E46006DF15A /* ViewProtocols.swift */; };
@@ -230,6 +231,7 @@
 		01C6BCD822BD61B000D71B15 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		01C6BCDA22BD61F800D71B15 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		01C6BCDC22BD626B00D71B15 /* Pool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
+		01C804B022C154A90064F5A4 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		01DBD8B422BD2E45006DF15A /* SecureKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureKeys.swift; sourceTree = "<group>"; };
 		01DBD8E622BD2E46006DF15A /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		01DBD8E822BD2E46006DF15A /* ViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
@@ -596,6 +598,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9C42A122745900000A6585 /* HotBoxKit.swift */,
+				01C804B022C154A90064F5A4 /* Firebase.h */,
 				01BF42FB22C1349D00C4F38F /* module.modulemap */,
 				01DBD8B222BD2E45006DF15A /* Core */,
 			);
@@ -631,6 +634,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C804B122C154A90064F5A4 /* Firebase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,11 +1027,13 @@
 				OTHER_LDFLAGS = (
 					"$(Inherited)",
 					"-ObjC",
+					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.3advance.HotBoxKit-iOS";
 				PRODUCT_NAME = HotBoxKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/Evans/Github/HotBoxKit/Sources/Firebase.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1063,11 +1069,13 @@
 				OTHER_LDFLAGS = (
 					"$(Inherited)",
 					"-ObjC",
+					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.3advance.HotBoxKit-iOS";
 				PRODUCT_NAME = HotBoxKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/Evans/Github/HotBoxKit/Sources/Firebase.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
