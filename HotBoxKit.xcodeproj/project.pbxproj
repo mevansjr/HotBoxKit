@@ -557,7 +557,6 @@
 				3D9C429B227458E8000A6585 /* Configs */,
 				3D9C429122745894000A6585 /* Products */,
 				01C6BCD722BD61AF00D71B15 /* Frameworks */,
-				998967AD0125E04C3D710EEE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -623,13 +622,6 @@
 				3D9C432F2274629C000A6585 /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		998967AD0125E04C3D710EEE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
