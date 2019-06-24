@@ -52,7 +52,7 @@ pod 'HotBoxKit'
 To integrate HotBoxKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "Mark Evans/HotBoxKit"
+github "mevansjr/HotBoxKit"
 ```
 
 Run `carthage update` to build the framework and drag the built `HotBoxKit.framework` into your Xcode project. 
@@ -65,7 +65,7 @@ To integrate using Apple's [Swift Package Manager](https://swift.org/package-man
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/MarkEvans/HotBoxKit.git", from: "1.0.0")
+    .package(url: "https://github.com/mevansjr/HotBoxKit.git", from: "1.0.0")
 ]
 ```
 
