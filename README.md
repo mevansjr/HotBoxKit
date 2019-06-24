@@ -42,7 +42,7 @@ HotBoxKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```bash
-pod 'HotBoxKit'
+pod 'HotBoxKit', :git => 'https://github.com/mevansjr/HotBoxKit'
 ```
 
 ### Carthage
