@@ -1010,10 +1010,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sources/Core/Libraries",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Sources/module.modulemap\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Configs/HotBoxKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -1053,10 +1050,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sources/Core/Libraries",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Sources/module.modulemap\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Configs/HotBoxKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
