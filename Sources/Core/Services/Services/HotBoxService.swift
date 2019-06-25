@@ -555,7 +555,6 @@ public extension HotBoxService {
                         .validate(statusCode: 200..<300)
                         .responseJSON(completionHandler: { (response) in
                             if let user = Mapper<UserApi>().map(JSONObject: response.result.value) {
-                                UINotificationFeedbackGenerator().notificationOccurred(.success)
                                 completion(user, nil)
                             } else if let error = response.result.error {
                                 completion(nil, error.handleError(response: response.response))

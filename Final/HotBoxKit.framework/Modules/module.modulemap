@@ -1,0 +1,4 @@
+framework module HotBoxKit {
+    header "HotBoxKit-Swift.h"
+    requires objc
+}
